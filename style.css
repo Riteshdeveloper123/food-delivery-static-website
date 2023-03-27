@@ -1,0 +1,296 @@
+/* CSS reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS variables 
+:root
+{
+    --nav-height:20px;
+}
+
+*/
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red;   */
+
+    /* position: sticky; */
+
+}
+
+/* navigation bar : Logo designing */
+
+#lobo img {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px;
+    /* border: 2px solid red; */
+}
+
+/* navigation bar : list designing */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: black;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 25px;
+    margin: 0px 3px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+    font-family: 'Bebas Neue', cursive;
+    font: bold;
+
+}
+
+/* We are using here Pseudo selector Before & After */
+#navbar::before {
+    content: " ";
+    background-color: rgb(12, 11, 11);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .4;
+
+}
+
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home season CSS starting from here */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 9px;
+    height: 500px;
+    /* border: 2px solid red; */
+
+}
+
+#home::before {
+    content: " ";
+    background: url(../IMG/food1.jpg) no-repeat center center/cover;
+    /* Important propertyes for background img */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: bold;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+    padding: 2px 10px;
+
+}
+
+.btn {
+    padding: 10px 10px;
+    margin: 17px;
+    border: 3px solid white;
+    color: white;
+    background-color: brown;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: rgb(223, 106, 106)
+        /*   box-shadow: 10px 10px 5px white;  */
+}
+
+
+
+/* services-Container CSS string from here */
+
+
+#services-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+    width: 200px;
+    /*   border: 2px solid red; */
+    margin: auto;
+    background-color: rgba(60, 54, 54, 0.89);
+    border-radius: 18px;
+    padding: 10px 10px;
+
+}
+
+#sevices {
+    /* margin: 34px; */
+    margin: 10px;
+    display: flex;
+    /* all box will go to horizantal */
+
+}
+
+#sevices .box {
+    border: 2px solid brown;
+    text-align: center;
+    margin: 34px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(244, 219, 189);
+}
+
+#sevices .box img {
+    height: 160px;
+    display: block;
+    width: 160px;
+    margin: auto;
+}
+
+#services-container h1 {
+    font-size: 30px;
+    font-style: bold;
+
+}
+
+.box h2 {
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+/* client section start from here */
+
+
+#client-section h1 {
+    color: rgb(3, 0, 0);
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img {
+    height: 124px;
+}
+
+
+.clients-itoms {
+    padding: 34px;
+}
+
+
+/* using pseudo selector  here for attach backbround img */
+
+#client-section::before {
+    content: " ";
+    position: absolute;
+    background: url(../img/food4.jpg) no-repeat center center/cover;
+
+    width: 100%;
+    height: 92%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+/* Contact section start from here */
+
+/* #contact {
+    border: 2px solid black;
+} */
+
+#contact h1 {
+
+    color: rgb(3, 0, 0);
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.5 rem;
+}
+
+.form-group input {
+    text-align: center;
+}
+
+
+
+
+/* Footer Section Star from here */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
